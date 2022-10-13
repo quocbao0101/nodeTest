@@ -8,7 +8,7 @@ var typingDnaVerifyClient = require("typingdna-verify-client");
 var typingDnaClient = new typingDnaVerifyClient({
   clientId: "b713430cb83fd50e973e0dd6205cccda",
   secret: "3cda1d13dcbcf5ced5700d3aaa011cc4",
-  applicationId: "d7db05c7b7cff6f5b8a111a66fa76951"
+  applicationId: "c3234940b0d9cfa02adc1ee49dcb6ab8"
 })
 app.set('views', path.join(__dirname, 'engine'));
 app.set('view engine', 'ejs');
