@@ -3,7 +3,6 @@ var path = require('path');
 var router = express.Router();
 var app = express();
 
-const PORT = 5005;
 var typingDnaVerifyClient = require("typingdna-verify-client");
 
 var typingDnaClient = new typingDnaVerifyClient({
@@ -41,7 +40,7 @@ router.get("/result", (req,res) => {
 
 
 app.use("/", router);
-app.listen(PORT || 3005, function(){
+app.listen(process.env.PORT || 3005, function(){
   console.log("Express server listening on port 5005");
 });
 
