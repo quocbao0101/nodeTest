@@ -39,7 +39,7 @@ router.get("/result", (req,res) => {
 
 
 app.use("/", router);
-app.listen(5000);
-console.log("Listening on port 5000");
+app.listen(5005 || 5010);
+console.log("Listening on port 5005");
 
 module.exports = app;
