@@ -1,0 +1,11 @@
+<script src="https://cdn.typingdna.com/verify/typingdna-verify.js"></script>
+
+<button
+  class="typingdna-verify"
+  data-typingdna-client-id=<%- JSON.stringify(data.clientId) %>
+  data-typingdna-application-id=<%- JSON.stringify(data.applicationId) %>
+  data-typingdna-payload=<%- JSON.stringify(data.payload) %>
+  data-typingdna-callback-fn="callbackFn"> Verify 2FA with TypingDNA
+</button>
+
+<h2><%- JSON.stringify(data.clientId) %></h2>
