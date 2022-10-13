@@ -41,7 +41,8 @@ router.get("/result", (req,res) => {
 
 
 app.use("/", router);
-app.listen(PORT || 5010);
-console.log("Listening on port 5005");
+app.listen(PORT || 3005, function(){
+  console.log("Express server listening on port 5005");
+});
 
 module.exports = app;
